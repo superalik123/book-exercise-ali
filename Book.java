@@ -55,12 +55,22 @@ class Book
         System.out.println("Title:"+title);
         System.out.println("Author:"+author);
         System.out.println("Pages:"+pages);
+        if(refNumber.length()>0)
+        System.out.println("Ref: "+refNumber);
+        else
+        System.out.println("ZZZ");
+         
     }
 //2.88
     public String getRefNumber(){
         return refNumber;
     }
     public void setRefNumber(String ref){
-        refNumber = ref;
+        if(ref.length()>= 3)
+    {refNumber = ref;
+    }
+    else
+    {System.out.println("Ref must be atleast 3 characters.");
+    }
     }
 }
