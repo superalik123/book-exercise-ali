@@ -13,8 +13,11 @@ class Book
     private String title;
     //2.85
     private int pages;
-    private String
+    //2.88
+    private String refNumber;
     
+    
+   
     public int getPages(int pages)
         {
             return pages;
@@ -26,9 +29,10 @@ class Book
      */
     public Book(String bookAuthor, String bookTitle, int bookPages)
     {
-        author = bookAuthor;
-        title = bookTitle;
-        pages = bookPages;
+        author    =  bookAuthor;
+        title     =  bookTitle;
+        pages     =  bookPages;
+        refNumber =  "";
     }
     //2.83
     public String getAuthor()
@@ -51,5 +55,12 @@ class Book
         System.out.println("Title:"+title);
         System.out.println("Author:"+author);
         System.out.println("Pages:"+pages);
-}
+    }
+//2.88
+    public String getRefNumber(){
+        return refNumber;
+    }
+    public void setRefNumber(String ref){
+        refNumber = ref;
+    }
 }
