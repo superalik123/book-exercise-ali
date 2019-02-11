@@ -30,5 +30,12 @@ class Book
     {
         return title;
     } 
-    // Add the methods here ...
+    // 2.84
+    public void printAuthor(){
+        System.out.println(author);
+    }
+    public void printTitle(){
+        System.out.println(title);
+    }
+    //2.85
 }
