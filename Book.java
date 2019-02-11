@@ -11,7 +11,14 @@ class Book
      // The fields.
     private String author;
     private String title;
-
+    //2.85
+    private int pages;
+    
+    public int getPages(int pages)
+        {
+            return pages;
+        }
+    
     /**
      * Set the author and title fields when this object
      * is constructed.
